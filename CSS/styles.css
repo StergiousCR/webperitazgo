@@ -1,3 +1,8 @@
+:root {
+    --whiteFont: #ffffff;
+    --backgroundBlue: rgb(72, 42, 202);
+    --blackTransparent: rgba(0, 0, 0, 0.6 );
+}
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -30,19 +35,19 @@ p {
 
 /* Site header */
 .site-header {
-    background-color: rgb(72, 42, 202);
+    background-color: var(--backgroundBlue);
     padding: 2rem 0;
-    border-bottom: .5rem solid #000;
+    border-bottom: var(--black);
 }
 .site-header h1{
     font-size: 3.3rem;
     font-weight: 700;
     text-align: center;
-    color: #fff;
+    color: var(--whiteFont);
     margin-bottom: 2rem;
 }
 .site-header p{
-    color: #fff;
+    color: var(--whiteFont);
     font-size: 2rem;
     text-align: center;
 }
@@ -50,7 +55,7 @@ p {
 
 .menu-desplegable {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--whiteFont);
 }
 .menu-desplegable h2 {
     margin-left: 30%;
@@ -64,7 +69,7 @@ p {
 .menu-desplegable label img {
     width: 5rem;
     padding: .8rem;
-    box-shadow: 5px 4px 6px 0px rgba(0,0,0,0.53);
+    box-shadow: 5px 4px 6px 0px var(--blackTransparent);
     border-bottom-right-radius: .7rem;
 }
  /* Acciona el boton */
@@ -94,9 +99,9 @@ p {
     text-align: center;
     padding: .8rem;
     margin-top: .7rem;
-    background-color: rgb(72, 42, 202);
+    background-color: var(--backgroundBlue);
     color: #fff;
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.53);
+    box-shadow: 2px 2px 3px var(--blackTransparent);
     border-radius: .5rem;
 }
 
@@ -119,6 +124,9 @@ p {
     font-size: 1.6rem;
     margin: 1.2rem 0;
     text-align: center;
+}
+#img-abraham {
+    box-shadow: 5px 5px 10px var(--blackTransparent);
 }
 
 /* Footer*/
