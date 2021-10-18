@@ -1,0 +1,188 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Merriweather', serif;
+    line-height: 1.3;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Globals  */
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+ul  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+h3, h2, h1 {
+    font-weight: 700;
+}
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Site header */
+.site-header {
+    background-color: rgb(72, 42, 202);
+    padding: 2rem 0;
+    border-bottom: .5rem solid #000;
+}
+.site-header h1{
+    font-size: 3.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.site-header p{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+/* Menu desplegable */
+
+.menu-desplegable {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.menu-desplegable h2 {
+    margin-left: 30%;
+    font-size: 3.2rem;
+    margin-top: -4.4rem;
+    margin-bottom: 2rem;
+}
+.menu-desplegable label:hover {
+    cursor: pointer;
+}
+.menu-desplegable label img {
+    width: 5rem;
+    padding: .8rem;
+    box-shadow: 5px 4px 6px 0px rgba(0,0,0,0.53);
+    border-bottom-right-radius: .7rem;
+}
+ /* Acciona el boton */
+#btn-menu {
+    display: none;
+}
+#btn-menu:checked ~ .menu {
+    margin-left: 1rem;
+}
+
+/* Nav del Menu*/
+.menu {
+    position: absolute;
+    margin-left: -100%;
+    margin-top: -1.7rem;
+    width: 17rem;
+    transition: all 1s ease-in-out;
+}
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .8rem;
+    margin-top: .7rem;
+    background-color: rgb(72, 42, 202);
+    color: #fff;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.53);
+    border-radius: .5rem;
+}
+
+/* Main */
+/* .main {
+    height: 100vh; ERA SOLO UNA PRUEBA PERO MEJOR LA OTRA OPCION
+} */
+.peritazgo {
+    display: flex;
+    flex-direction: column;
+}
+.peritazgo p{
+    margin-bottom: 1rem;
+}
+.peritazgo img {
+    margin-bottom: 2rem;
+}
+.peritazgo a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 1.2rem 0;
+    text-align: center;
+}
+
+/* Footer*/
+.footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: .5rem solid #000;
+    background-color: rgb(72, 42, 202);
+}
+.footer-main h2 {
+    font-size: 1.8rem;
+    padding: 1.4rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* Pagina Peritazgo 2020 */
+
+/* Preguntas*/
+.header-fundamento {
+    padding: 1.7rem 0;
+    border-bottom: .5rem solid #000;
+    background-color: rgb(72, 42, 202);
+}
+.header-fundamento div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-fundamento div h1 {
+    color: #fff;
+    font-size: 2.2rem;
+}
+.header-fundamento a img {
+    filter: invert(100%);
+    width: 4rem;
+}
+/* Main fundamentos */
+
+.main-fundamento h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.single-fundamento h3 {
+    font-size: 2.1rem;
+    margin: .5rem 0;
+}
+.single-fundamento p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.7rem;
+    margin: 0 0 1.8rem 0;
+}
+.single-fundamento h4 {
+    margin: 0;
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+}
+.single-fundamento h4::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: rgb(72, 42, 202);
+}
